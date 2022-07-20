@@ -20,7 +20,6 @@ while(<$fp>) {
 }
 close($fp);
 
-# Summary
 open(my $fp_summary, ">internal_masscan_summary.txt") || die print "Could not open internal_masscan_summary.txt: $!\n";
 open(my $fp_ipports, ">internal_masscan_ipports.txt") || die print "Could not open internal_masscan_ipports.txt: $!\n";
 foreach my $ip (sort keys %map) {
