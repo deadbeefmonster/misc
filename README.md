@@ -7,3 +7,4 @@
 * **parse_masscan_greppable.pl**: script to create two text files: 1) ip:ports and 2) ip / port / service summary
 * **parse_gnmap_to_nmap.pl**: script to output nmap -sV and -sC command using ports and ips listed in a gnmap file. Typically, I work by enumerating IPs and then ports, and then using this to enumerate the version info on those ports, along with any default nmap scripts.
 * **urls_chunking.pl**: script to create files chunked with urls based on a hard coded chunk size
+* **parse_gnmap_port_ip_files.pl**: parse gnmap files to create <proto><port>.txt files with one IP per line for each that has that proto and port open
