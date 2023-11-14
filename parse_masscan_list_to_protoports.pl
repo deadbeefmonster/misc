@@ -5,7 +5,6 @@ use strict;
 my $masscan_list_file = $ARGV[0];
 open(my $fp, $masscan_list_file) || die print "Could not open '$masscan_list_file': $!\n";
 while(<$fp>) {
-        # open tcp 80 10.128.53.156 1699904090
         if (/open\s+([a-z]+)\s+(\d+)\s+(\d+\.\d+\.\d+\.\d+)\s+\d+/) {
                 my $proto = $1;
                 my $port = $2;
