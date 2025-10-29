@@ -10,3 +10,4 @@
 * **parse_gnmap_port_ip_files.pl**: parse gnmap files to create <proto><port>.txt files with one IP per line for each that has that proto and port open
 * **cme_cleanup.pl**: parse CME output log file and print it back out with lines grouped together by IP in the order they appear in the log file (CME can output lines as they come in which usually isn't in order and makes parsing by a human difficult
 * **parse_masscan_list_to_protoports.pl**: parse a masscan list file, creating <proto><port>.txt files with one IP per line for each that has that proto and port open
+* **wigglewigglewiggleyeah.pl**: small script that uses cliclick to press the keyboard and move the mouse, helps with idle trackers. example usage: `while [ yes ] ; do ~/wigglewigglewiggleyeah.pl; sleep $((RANDOM % 151 + 100)); done`
