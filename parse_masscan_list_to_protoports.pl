@@ -9,7 +9,7 @@ while(<$fp>) {
                 my $proto = $1;
                 my $port = $2;
                 my $ip = $3;
-                my $out_filename = $proto . $port . "-masscan_top100ports.txt";
+                my $out_filename = $proto . $port . ".txt";
                 open(my $fp2, ">>$out_filename") || die print "Unable to open '$out_filename': $!\n";
                 print $fp2 $ip . "\n";
                 close($fp2);
